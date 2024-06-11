@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+        <link rel="shortcut icon" href="./images/logo.webp" type="image/x-icon">
         <link rel="stylesheet" href="styles.css">
 
         <!--Google Fonts-->
@@ -14,7 +14,9 @@
     </head>
     <body>
         <header>
-            <a href="#"><img src="./images/logo.webp" class="logo" alt="pickle" title="pickle" /></a>
+            <div class="logo">
+                <a href="#"><img src="./images/logo.webp" class="logo" alt="pickle" title="pickle" /></a>
+            </div>
             <div class="header-title">
                 <a href="#"><h1>Santee Pickleballers</h1></a>
             </div>
@@ -23,17 +25,29 @@
             </nav>
         </header>
         <main>
-            <section>
-                <div>
-                    <h2>Play Pickeball With Us At Big Rock Park!</h2>
-                    <p>Meet with friends and make new ones playing pickleball at Santee's favorite courts, located at Big Rock Park!</p>
-                    <p><a>Register here</a> to find players at similar experience levels and reserve play time. All levels of play are welcome and accomodated.</p>
+            <section class="about-section">
+                <h2>Play Pickeball With Us At Big Rock Park!</h2>
+                <div class="about-section-description">
+                    <div class="about-section-side about-text">
+                        <p>Meet with friends and make new ones playing pickleball at Santee's favorite courts, located at Big Rock Park!</p>
+                        <p><a href="#">Register here</a> to find players at similar experience levels and reserve play time. All levels of play are welcome and accomodated.</p>
+                    </div>
+                    <div class="about-section-center">
+                        <img src="./images/about-background.jpg" alt="Big Rock Park Pickleball Courts photo" title="Big Rock Park Pickleball Courts photo" />
+                    </div>
+                    <div class="about-section-side about-text">
+                        <h3>Quotes about America's fastest growing sport!</h3>
+                        <p>“Pickleball. Making retirement great again.”</p>
+                        <p>“I’d rather be in the kitchen.”</p>
+                        <p>“If you text them they will come.”</p>
+                        <p>“Never underestimate an old man with a Pickleball paddle.”</p>
+                    </div>
                 </div>
             </section>
             <section>
                 <h2>Registered Players in Santee</h2>
                 <form>
-                    <input type="text" name="search-player-field" value="Search players" />
+                    <input type="text" name="search-player-field" value="" placeholder="Search players" />
                     <input type="submit" value="Search">
                 </form>
                 <div class="registered-player">

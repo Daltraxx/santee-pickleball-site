@@ -18,9 +18,13 @@ header {
 }
 
 .logo {
+    width: 8rem;
+}
+
+.logo img {
     height: 3rem;
     width: 3rem;
-    margin-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 .header-title a {
@@ -30,9 +34,11 @@ header {
 
 .header-title h1 {
     color: #FFF;
+    text-align: center;
 }
 
 nav {
+    width: 8rem;
     margin-right: 1rem;
 }
 
@@ -41,6 +47,50 @@ nav a {
 }
 
 /*About Section*/
+.about-section h2 {
+    text-align: center;
+}
+
+.about-section-description {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+.about-section-side {
+    width: 30%;
+    
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section-center {
+    max-width: 40%;
+    min-width: 37.8rem;
+}
+
+
+.about-text h3, .about-text p {
+    max-width: 60%;
+    text-align: center;
+    line-height: 1.6rem;
+}
+
+@media only screen and (max-width: 1700px) {
+    .about-section-description {
+        flex-direction: column;
+    }
+}
+
 
 /*Registered Players Section*/
 
