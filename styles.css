@@ -3,6 +3,11 @@ html {
     box-sizing: border-box;
 }
 
+:root {
+    --padres-color-brown: #2F241D;
+    --padres-color-gold: #FFC425;
+}
+
 body {
     margin: 0;
     font-family: "Roboto", sans-serif;
@@ -35,6 +40,9 @@ header {
 .header-title h1 {
     color: #FFF;
     text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 nav {
@@ -49,6 +57,7 @@ nav a {
 /*About Section*/
 .about-section h2 {
     text-align: center;
+    color: var(--padres-color-brown);
 }
 
 .about-section-description {
@@ -57,7 +66,7 @@ nav a {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    margin: 0 auto;
+    margin-bottom: 0;
 
 }
 
@@ -78,12 +87,27 @@ nav a {
     min-width: 37.8rem;
 }
 
+.about-section-center img {
+    height: 23rem;
+    min-width: 37.8rem;
+}
+
 
 .about-text h3, .about-text p {
     max-width: 60%;
     text-align: center;
+    color: var(--padres-color-brown);
     line-height: 1.6rem;
 }
+
+.about-text h3 {
+    font-weight: 800;
+}
+
+.about-text p {
+    font-weight: 500;
+}
+
 
 @media only screen and (max-width: 1700px) {
     .about-section-description {
