@@ -7,3 +7,47 @@ body {
     margin: 0;
     font-family: "Roboto", sans-serif;
 }
+
+/*Header*/
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, rgba(47,36,29,1) 0%, rgba(255,196,37,1) 100%);;
+}
+
+.logo {
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+}
+
+.header-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header-title h1 {
+    color: #FFF;
+}
+
+nav {
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #2f241d;
+}
+
+/*About Section*/
+
+/*Registered Players Section*/
+
+.profile-image {
+    height: 10.5rem;
+}
+
+
+
+
