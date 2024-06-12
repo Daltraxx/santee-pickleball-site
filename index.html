@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-        
+
         <title>Santee Pickleballers</title>
     </head>
     <body>
@@ -27,7 +27,9 @@
         </header>
         <main>
             <section class="about-section">
-                <h2>Play Pickeball With Us At Big Rock Park!</h2>
+                <div class="section-header">
+                    <h2>Play Pickeball With Us At Big Rock Park!</h2>
+                </div>
                 <div class="about-section-description">
                     <div class="about-section-side about-text">
                         <p>Meet with friends and make new ones playing pickleball at Santee's favorite courts, located at Big Rock Park!</p>
@@ -45,59 +47,61 @@
                     </div>
                 </div>
             </section>
-            <section>
-                <h2>Registered Players in Santee</h2>
-                <form>
-                    <input type="text" name="search-player-field" value="" placeholder="Search players" />
-                    <input type="submit" value="Search">
-                </form>
-                <div class="registered-player">
-                    <img src="./images/profile-image.png" alt="player profile image" title="player profile image" class="profile-image"/>
-                    <p>Jeff Lebowski</p>
+            <section class="players-section">
+                <div class="players-section-header">
+                    <h2>Registered Players in Santee</h2>
+                    <form id="search-players-form">
+                        <input type="text" name="search-player-field" value="" placeholder="Search players" id="search-field"/>
+                        <button type="submit" form="search-players-form">Submit</button>
+                    </form>
                 </div>
-                <div class="registered-player">
-                    <img src="./images/profile-image.png" alt="player profile image" title="player profile image" class="profile-image"/>
-                    <p>Jeff Lebowski</p>
-                </div>
-                <div class="registered-player">
-                    <img src="./images/profile-image.png" alt="player profile image" title="player profile image" class="profile-image"/>
-                    <p>Jeff Lebowski</p>
-                </div>
-                <div class="registered-player">
-                    <img src="./images/profile-image.png" alt="player profile image" title="player profile image" class="profile-image"/>
-                    <p>Jeff Lebowski</p>
-                </div>
-                <div class="registered-player">
-                    <img src="./images/profile-image.png" alt="player profile image" title="player profile image" class="profile-image"/>
-                    <p>Jeff Lebowski</p>
-                </div>
-                <div class="registered-player">
-                    <img src="./images/profile-image.png" alt="player profile image" title="player profile image" class="profile-image"/>
-                    <p>Jeff Lebowski</p>
-                </div>
-                <div class="registered-player">
-                    <img src="./images/profile-image.png" alt="player profile image" title="player profile image" class="profile-image"/>
-                    <p>Jeff Lebowski</p>
-                </div>
-                <div class="registered-player">
-                    <img src="./images/profile-image.png" alt="player profile image" title="player profile image" class="profile-image"/>
-                    <p>Jeff Lebowski</p>
-                </div>
-                <div class="registered-player">
-                    <img src="./images/profile-image.png" alt="player profile image" title="player profile image" class="profile-image"/>
-                    <p>Jeff Lebowski</p>
-                </div>
-                <div class="registered-player">
-                    <img src="./images/profile-image.png" alt="player profile image" title="player profile image" class="profile-image"/>
-                    <p>Jeff Lebowski</p>
-                </div>
-                <div class="registered-player">
-                    <img src="./images/profile-image.png" alt="player profile image" title="player profile image" class="profile-image"/>
-                    <p>Jeff Lebowski</p>
+                <div class="registered-players-container">
+                    <div class="registered-player">
+                        <img src="./images/profile-image.png" alt="player profile image" title="player profile image" />
+                        <p>Jeff Lebowski</p>
+                    </div>
+                    <div class="registered-player">
+                        <img src="./images/profile-image.png" alt="player profile image" title="player profile image" />
+                        <p>Jeff Lebowski</p>
+                    </div>
+                    <div class="registered-player">
+                        <img src="./images/profile-image.png" alt="player profile image" title="player profile image" />
+                        <p>Jeff Lebowski</p>
+                    </div>
+                    <div class="registered-player">
+                        <img src="./images/profile-image.png" alt="player profile image" title="player profile image" />
+                        <p>Jeff Lebowski</p>
+                    </div>
+                    <div class="registered-player">
+                        <img src="./images/profile-image.png" alt="player profile image" title="player profile image" />
+                        <p>Jeff Lebowski</p>
+                    </div>
+                    <div class="registered-player">
+                        <img src="./images/profile-image.png" alt="player profile image" title="player profile image" />
+                        <p>Jeff Lebowski</p>
+                    </div>
+                    <div class="registered-player">
+                        <img src="./images/profile-image.png" alt="player profile image" title="player profile image" />
+                        <p>Jeff Lebowski</p>
+                    </div>
+                    <div class="registered-player">
+                        <img src="./images/profile-image.png" alt="player profile image" title="player profile image" />
+                        <p>Jeff Lebowski</p>
+                    </div>
+                    <div class="registered-player">
+                        <img src="./images/profile-image.png" alt="player profile image" title="player profile image" />
+                        <p>Jeff Lebowski</p>
+                    </div>
+                    <div class="registered-player">
+                        <img src="./images/profile-image.png" alt="player profile image" title="player profile image" />
+                        <p>Jeff Lebowski</p>
+                    </div>
                 </div>
             </section>
             <section>
-                <h2>Reserve a Court</h2>
+                <div class="section-header">
+                    <h2>Reserve a Court</h2>
+                </div>
                 <div>
                     <p>Times reserved are for one hour. Courts are located at Big Rock Park.</p>
                     <p>Park Address: <a href="#">8125 Arlette St, Santee, CA 92071</a></p>

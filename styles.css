@@ -4,7 +4,7 @@ html {
 }
 
 :root {
-    --padres-color-brown: #2F241D;
+    --padres-color-brown: rgb(47, 36, 29);
     --padres-color-gold: #FFC425;
 }
 
@@ -13,13 +13,25 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
+h2 {
+    color: var(--padres-color-brown);
+}
+
+.section-header {
+    text-align: center;
+    background-color: var(--padres-color-gold);
+    border: 2px solid var(--padres-color-brown);
+    border-style: solid none;
+    margin: 0;
+}
+
 /*Header*/
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: linear-gradient(90deg, rgba(47,36,29,1) 0%, rgba(255,196,37,1) 100%);;
+    background-color: var(--padres-color-brown)
 }
 
 .logo {
@@ -38,7 +50,7 @@ header {
 }
 
 .header-title h1 {
-    color: #FFF;
+    color: white;
     text-align: center;
     font-family: "Oswald", sans-serif;
     font-weight: 600;
@@ -51,13 +63,15 @@ nav {
 }
 
 nav a {
-    color: #2f241d;
+    color: var(--padres-color-gold);
+    font-weight: 450;
 }
 
 /*About Section*/
-.about-section h2 {
-    text-align: center;
-    color: var(--padres-color-brown);
+
+.about-section-header h2 {
+    margin: 0;
+    padding: 1rem 0;
 }
 
 .about-section-description {
@@ -67,7 +81,7 @@ nav a {
     flex-direction: row;
     align-items: center;
     margin-bottom: 0;
-
+    height: 23rem;
 }
 
 .about-section-side {
@@ -90,6 +104,8 @@ nav a {
 .about-section-center img {
     height: 23rem;
     min-width: 37.8rem;
+    border: 2px solid var(--padres-color-brown);
+    border-style: none solid;
 }
 
 
@@ -112,15 +128,90 @@ nav a {
 @media only screen and (max-width: 1700px) {
     .about-section-description {
         flex-direction: column;
+        height: inherit;
+    }
+
+    .about-section-center img {
+        border-style: none;
     }
 }
 
 
 /*Registered Players Section*/
-
-.profile-image {
-    height: 10.5rem;
+.players-section-header {
+    text-align: center;
+    background-color: var(--padres-color-gold);
+    border: 2px solid var(--padres-color-brown);
+    border-style: solid none;
 }
+
+.players-section-header h2 {
+    margin-top: 0;
+    padding-top: 1rem;
+}
+
+/*Form and Button Styling*/
+.players-section-header form {
+    padding-bottom: 1rem;
+}
+
+.players-section-header input, .players-section-header button {
+    border: 2px solid var(--padres-color-brown);
+    border-radius: 5px;
+    height: 1.2rem;
+    font-size: .8rem;
+    
+}
+
+.players-section-header input:focus {
+    outline: none;
+}
+
+.players-section-header button {
+    color: #FFF;
+    background-color: var(--padres-color-brown);
+    font-weight: 600;
+    width: 5rem;
+    height: 1.5rem;
+}
+
+.players-section-header button:hover {
+    color: var(--padres-color-gold);
+    background-color: hsla(23, 23%, 27%, 1);
+    
+}
+
+.players-section-header button:active {
+    color: var(--padres-color-brown);
+    background-color: var(--padres-color-gold);
+    
+}
+
+/*Registered players styling*/
+
+.registered-players-container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+.registered-player {
+    text-align: center;
+    margin: 0 1.2rem;
+}
+
+.registered-player img {
+    height: 10.5rem;
+    border: 1px solid var(--padres-color-gold);
+}
+
+.registered-player p {
+    margin-top: .2rem;
+    font-size: .9rem;
+}
+
+/*Reserve Court Section*/
 
 
 
