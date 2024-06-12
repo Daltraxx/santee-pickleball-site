@@ -25,6 +25,10 @@ h2 {
     margin: 0;
 }
 
+button:hover, select {
+    cursor: pointer;
+}
+
 /*Header*/
 
 header {
@@ -134,6 +138,11 @@ nav a {
     .about-section-center img {
         border-style: none;
     }
+
+    .about-section-side {
+        width: 60%;
+    }
+
 }
 
 
@@ -213,6 +222,56 @@ nav a {
 
 /*Reserve Court Section*/
 
+.court-reservation-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.reservation-form-section:not(:first-of-type) {
+    margin-top: .8rem;
+}
+
+.reservation-form-section input:hover {
+    cursor: pointer;
+}
+
+.reservation-form-section button {
+    color: #FFF;
+    background-color: var(--padres-color-brown);
+    font-weight: 600;
+    border: 2px solid var(--padres-color-brown);
+    border-radius: 5px;
+    height: 1.5rem;
+}
+
+.reservation-form-section button:hover {
+    color: var(--padres-color-gold);
+    background-color: hsla(23, 23%, 27%, 1);
+    
+}
+
+.reservation-form-section button:active {
+    color: var(--padres-color-brown);
+    background-color: var(--padres-color-gold);
+    
+}
+
+/*Footer*/
+
+footer {
+    background-color: var(--padres-color-brown);
+    margin-top: 1.5rem;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: #FFF;
+    padding: .5rem;
+}
 
 
 

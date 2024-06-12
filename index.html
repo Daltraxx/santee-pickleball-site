@@ -102,28 +102,37 @@
                 <div class="section-header">
                     <h2>Reserve a Court</h2>
                 </div>
-                <div>
-                    <p>Times reserved are for one hour. Courts are located at Big Rock Park.</p>
-                    <p>Park Address: <a href="#">8125 Arlette St, Santee, CA 92071</a></p>
+                <div class="court-reservation-container">
+                    <div>
+                        <p>Times reserved are for one hour. Courts are located at Big Rock Park.</p>
+                        <p>Park Address: <a href="#">8125 Arlette St, Santee, CA 92071</a></p>
+                    </div>
+                    <form id="reservation">
+                        <div class="reservation-form-section">
+                            <label for="time">Choose a time:</label>
+                            <select id="time" name="time">
+                                <option value="7am">7:00am</option>
+                                <option value="8am">8:00am</option>
+                                <option value="9am">9:00am</option>
+                                <option value="10am">10:00am</option>
+                                <option value="11am">11:00am</option>
+                                <option value="12pm">12:00pm</option>
+                                <option value="1pm">1:00pm</option>
+                                <option value="2pm">2:00pm</option>
+                                <option value="3pm">3:00pm</option>
+                                <option value="4pm">4:00pm</option>
+                                <option value="5pm">5:00pm</option>
+                            </select>
+                        </div>
+                        <div class="reservation-form-section">
+                            <label for="date">Choose a date:</label>
+                            <input type="date" id="date" name="date" value="2024-06-24" min="2024-06-24" max="2025-01-01"/>
+                        </div>
+                        <div class="reservation-form-section">
+                            <button type="submit" form="reservation">Search Open Times</button>
+                        </div>
+                    </form>
                 </div>
-                <form>
-                    <label for="time">Choose a time:</label>
-                    <select id="time" name="time">
-                        <option value="7am">7:00am</option>
-                        <option value="8am">8:00am</option>
-                        <option value="9am">9:00am</option>
-                        <option value="10am">10:00am</option>
-                        <option value="11am">11:00am</option>
-                        <option value="12pm">12:00pm</option>
-                        <option value="1pm">1:00pm</option>
-                        <option value="2pm">2:00pm</option>
-                        <option value="3pm">3:00pm</option>
-                        <option value="4pm">4:00pm</option>
-                        <option value="5pm">5:00pm</option>
-                    </select>
-                    <label for="date">Choose a date:</label>
-                    <input type="date" id="date" name="date" value="2024-06-24" min="2024-06-24" max="2025-01-01"/>
-                </form>
             </section>
         </main>
         <footer>
